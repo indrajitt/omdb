@@ -8,6 +8,7 @@ export default function Search(props) {
 
   return (
     <div className="background">
+      
       <input className="search clear-margin-top" type="text" value={value} onChange={handleChange} />
       <button className="btn btn-success clear-margin-top" onClick={handleSubmit}>Search</button>
     </div>

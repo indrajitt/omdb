@@ -5,9 +5,12 @@ import Card from '../../components/Card/Card';
 import List from '../../components/List/List';
 import Search from '../../components/Search/Search';
 
+// import './SearchPage.css';
+
 import { baseUrl, axiosHeaders } from '../../utils/constants';
 
 export default function SearchPage() {
+
   const [searchTerm, setSearchTerm] = useState('');
   const [searchResult, setSearchResult] = useState([]);
 
@@ -30,6 +33,7 @@ export default function SearchPage() {
       <Search value={searchTerm} onChange={setSearchTerm} onSubmit={onSubmit} />
       <br />
       <List elements={searchResult} component={Card} />
+      
     </>
   )
 }
