@@ -5,8 +5,6 @@ import Card from '../../components/Card/Card';
 import List from '../../components/List/List';
 import Search from '../../components/Search/Search';
 
-// import './SearchPage.css';
-
 import { baseUrl, axiosHeaders } from '../../utils/constants';
 
 export default function SearchPage() {

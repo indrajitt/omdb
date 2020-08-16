@@ -7,7 +7,6 @@ import {
 import './App.css';
 import SearchPage from './pages/SearchPage/SearchPage';
 import DetailsPage from './pages/DetailsPage/DetailsPage';
-import HomePage from './pages/HomePage/HomePage';
 
 /**
  * The Router maps a url to a component
@@ -17,7 +16,6 @@ function App() {
     <div className="container-fluid remove-padding">
       <Router>
         <Switch>
-          <Route path="/search" component={SearchPage} />
           <Route path="/details/:imdbID" component={DetailsPage} />
           <Route path="/" component={SearchPage} />
         </Switch>
